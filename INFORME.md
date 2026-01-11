@@ -1,6 +1,6 @@
 # Estructuras No Lineales – Ejercicios Árboles  
 **Autor:** *Antonio Andres Carvelli Perez*  
-**Materia:** Estructuras de datos Lineales  
+**Materia:** Estructuras de datos  
 
 
 ---
@@ -38,5 +38,26 @@ La idea principal es mantener el orden lógico del árbol: los valores menores q
 4. Si el valor ya existe, no lo vuelvo a insertar para evitar duplicados.
 
 El proceso termina cuando se han colocado todos los valores en sus posiciones correspondientes, respetando las reglas del BST.
+
+
+
+## 🔁 Ejercicio 02 – Invertir un Árbol Binario
+
+**Clase:** `InvertBinaryTree.java`  
+
+**Captura del código:**  
+👉 ![captura](ruta/de/tu/imagen2.png)
+
+### 🔍 Explicación de la lógica
+
+En este ejercicio invertí o “reflejeé” un árbol binario.  
+La lógica consiste en recorrer el árbol y, para cada nodo, **intercambiar sus hijos izquierdo y derecho**.  
+Usé recursión porque cada subárbol se puede tratar como un árbol completo por sí mismo.
+
+1. Si el nodo actual es `null`, no hago nada (caso base).  
+2. Llamo recursivamente al método en ambos hijos.  
+3. Intercambio las referencias del hijo izquierdo y derecho.  
+
+De esta forma, el árbol resultante es una versión especular (espejo) del original.
 
 **Ejemplo:**
