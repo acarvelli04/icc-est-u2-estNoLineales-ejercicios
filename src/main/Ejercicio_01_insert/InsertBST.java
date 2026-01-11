@@ -24,7 +24,6 @@ public class InsertBST {
             root.setRight(insert(root.getRight(), value));
 
         } else {
-            // Si el valor ya existe, no hago nada.
         }
 
         return root;
